@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>My HTML test.</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            width: 48%;
+            border-collapse: collapse;
+        }
+        .sample-table h3 {
+            font-weight: bold;
+        }
+        .sample-image {
+            max-width: 900px;
+        }
+        .felidae-tiger {
+            max-width: 900px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Species of big cats</h1>
     <p>212362</p>
-    <table>
+    <h1>Felidae - some species of big cats</h1>
+    <table class="sample-table">
         <thead>
-            <tr>
-                <th><h3>Pantherinaeh</h3></th>
+            <tr class="table-row">
+                <th><h3>Pantherinae</h3></th>
                 <th><h3>Felinae</h3></th>
             </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Panthera</td>
-            <td>Neofelis</td>
+        <tr class="table-row">
+            <td style="font-weight: bold">Panthera</td>
+            <td style="font-weight: bold">Neofelis</td>
         </tr>
-        <tr>
+        <tr class="table-row">
             <td>Leopard</td>
             <td>Clouded leopard</td>
         </tr>
@@ -29,5 +45,29 @@
         </tr>
         </tbody>
     </table>
+    <div class ="felidae-tiger">
+        <h2>Tiger - Panthera tigris</h2>
+        <img class="sample-image" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Walking_tiger_female.jpg"
+             alt="Tiger - Panthera tigris">
+        <p>
+            The tiger (Panthera tigris) is the largest living cat species and a member of the genus Panthera.
+            It is most recognisable for its dark vertical stripes on orange fur with a white underside.
+            It is an apex predator, primarily preying on ungulates such as deer and wild boar.
+            It is territorial and generally a solitary but social predator, requiring large contiguous areas of habitat,
+            which support its requirements for prey and rearing of its offspring.
+            Tiger cubs stay with their mother for about two years, then become independent and leave their mother's
+            home range to establish their own.
+        </p>
+        <p>
+            The tiger is listed as Endangered on the IUCN Red List. As of 2015, the global wild tiger population
+            was estimated to number between 3,062 and 3,948 mature individuals, with most of the populations living
+            in small isolated pockets. India currently hosts the largest tiger population. Major reasons for
+            population decline are habitat destruction, habitat fragmentation and poaching. Tigers are also victims
+            of human–wildlife conflict, particularly in range countries with a high human population density.
+        </p>
+    </div>
+    <div id="go-to-taltech">
+        <p><a href="https://www.taltech.ee">Mine TalTechi lehele!</a></p>
+    </div>
 </body>
 </html>
